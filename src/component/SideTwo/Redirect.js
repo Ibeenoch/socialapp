@@ -13,7 +13,7 @@ const Redirect = () => {
         return () => clearInterval(interval)
     }, [count, navigate])
   return (
-    <h1 style={{ margin:'3rem'}}>Redirecting you in {count} seconds, please login again to continue </h1>
+    <h1 style={{ margin:'4rem'}}>Redirecting you in {count} seconds, please login again to continue </h1>
   )
 }
 
