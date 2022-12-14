@@ -1,5 +1,5 @@
 import axios from 'axios'
-const url = 'https://socialappbackend.onrender.com';
+const url = 'https://socialbackend.onrender.com';
 
 export const login = async (formdata) => await axios.post(`${url}/user/login`, formdata)
 export const register = async (formdata) => await axios.post(`${url}/user/register`, formdata)
