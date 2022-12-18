@@ -63,12 +63,11 @@ if(!arr){
 
 }
 
-const addEventForm = async(dataprofile) => {
+const addEventForm = (dataprofile) => {
   if(prevPro){
      dispatch(profileUpdate({dataprofile, navigate, toast}))  
   }else{
-    
-   return await Promise.all([dispatch(createProfile({dataprofile,toast})), dispatch(getProfile({ navigate })) ])          
+   dispatch(createProfile({dataprofile,toast}))          
   }
 
 }
