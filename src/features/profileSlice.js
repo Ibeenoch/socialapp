@@ -88,7 +88,7 @@ const profileSlice = createSlice({
             state.message = action.payload
         })
         .addCase(getProfile.pending,  (state, action)=> {
-            state.isLoading = false
+            state.isLoading = true
         })
         .addCase(getProfile.fulfilled, (state, action) => {
             state.isLoading=false
