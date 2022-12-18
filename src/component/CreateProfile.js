@@ -67,7 +67,7 @@ const addEventForm = (dataprofile) => {
   if(prevPro){
      dispatch(profileUpdate({dataprofile, navigate, toast}))  
   }else{
-   dispatch(createProfile({dataprofile,toast}))          
+   dispatch(createProfile({dataprofile, navigate, toast}))          
   }
 
 }
