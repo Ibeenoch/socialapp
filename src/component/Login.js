@@ -33,11 +33,7 @@ const { email, password } = formdata
   }, [])
 
   useEffect(() => {
-    if(registered && loggedin){ 
-      navigate('/createprofile')
-    }
-  
-    if(!registered && loggedin ){ 
+    if( loggedin ){ 
       navigate('/')
     }
   }, [ loggedin, navigate])
