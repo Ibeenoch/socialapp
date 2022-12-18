@@ -13,9 +13,9 @@ const initialState = {
     message: ''
 }
 
-export const createProfile = createAsyncThunk('/profile/create', async({dataprofile, toast}, thunkAPI) => {
+export const createProfile = createAsyncThunk('/profile/create', async({dataprofile, navigate, toast}, thunkAPI) => {
     try {
-   return await api.createProfile({dataprofile, toast})
+   return await api.createProfile({dataprofile, navigate, toast})
 
     } catch (error) {
         const message = error.response || error.response.data
@@ -23,10 +23,10 @@ export const createProfile = createAsyncThunk('/profile/create', async({dataprof
     }
 }) 
 
-export const getProfile = createAsyncThunk('/profile/get', async({ navigate }, thunkAPI) => {
+export const getProfile = createAsyncThunk('/profile/get', async(_, thunkAPI) => {
     try {
       
-        return await api.getProfile({ navigate })
+        return await api.getProfile()
     } catch (error) {
         const message = error.response || error.response.data
         return thunkAPI.rejectWithValue(message)
@@ -88,7 +88,7 @@ const profileSlice = createSlice({
             state.message = action.payload
         })
         .addCase(getProfile.pending,  (state, action)=> {
-            state.isLoading = true
+            state.isLoading = false
         })
         .addCase(getProfile.fulfilled, (state, action) => {
             state.isLoading=false
