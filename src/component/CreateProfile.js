@@ -5,7 +5,6 @@ import { useDispatch, useSelector } from 'react-redux'
 import { useNavigate, useParams } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { createProfile, getProfile, profileUpdate } from '../features/profileSlice'
-import { setLogout } from '../features/userSlice'
 import Loading from './SideThree/Loading'
 
 const CreateProfile = () => {
@@ -69,7 +68,7 @@ const addEventForm = async(dataprofile) => {
      dispatch(profileUpdate({dataprofile, navigate, toast}))  
   }else{
     
-   return await Promise.all([dispatch(createProfile({dataprofile, navigate, toast})), dispatch(setLogout()) ])          
+   return await Promise.all([dispatch(createProfile({dataprofile,toast})), dispatch(getProfile({ navigate })) ])          
   }
 
 }
