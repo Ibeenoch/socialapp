@@ -46,7 +46,7 @@ export const register = createAsyncThunk('user/register', async({formdata, navig
     try {
         const response = await api.register(formdata)
       
-         navigate('/login')
+         navigate('/createprofile')
         toast.success('Congratulations you are now a member') 
   
         return response.data
