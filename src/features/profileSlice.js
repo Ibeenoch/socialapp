@@ -13,9 +13,9 @@ const initialState = {
     message: ''
 }
 
-export const createProfile = createAsyncThunk('/profile/create', async({dataprofile, navigate, toast}, thunkAPI) => {
+export const createProfile = createAsyncThunk('/profile/create', async({dataprofile, toast}, thunkAPI) => {
     try {
-   return await api.createProfile({dataprofile, navigate, toast})
+   return await api.createProfile({dataprofile, toast})
 
     } catch (error) {
         const message = error.response || error.response.data
@@ -23,10 +23,10 @@ export const createProfile = createAsyncThunk('/profile/create', async({dataprof
     }
 }) 
 
-export const getProfile = createAsyncThunk('/profile/get', async(_, thunkAPI) => {
+export const getProfile = createAsyncThunk('/profile/get', async({ navigate }, thunkAPI) => {
     try {
       
-        return await api.getProfile()
+        return await api.getProfile({ navigate })
     } catch (error) {
         const message = error.response || error.response.data
         return thunkAPI.rejectWithValue(message)
