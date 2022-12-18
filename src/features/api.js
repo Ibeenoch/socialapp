@@ -46,7 +46,7 @@ return data
 }
 
 
-export const createProfile = async({dataprofile, navigate, toast}) => {
+export const createProfile = async({dataprofile, toast}) => {
   const { token } = JSON.parse(localStorage.getItem('user'))
 
   console.log(token) 
@@ -61,7 +61,6 @@ export const createProfile = async({dataprofile, navigate, toast}) => {
   const response = await fetch(`${url}/profile/create`, option)
 
   if(response){
-    navigate('/')
     toast.success('profile created')
   }
   
@@ -70,7 +69,7 @@ export const createProfile = async({dataprofile, navigate, toast}) => {
   
 }
 
-export const getProfile = async() => {
+export const getProfile = async({ navigate }) => {
 
     const { token} = JSON.parse(localStorage.getItem('user'))
 
@@ -85,7 +84,9 @@ export const getProfile = async() => {
  const response = await fetch(`${url}/profile/me`,  option )
 
  const data = await response.json()
-
+if(data){
+navigate('/')
+}
 
 console.log(data)
 return data
