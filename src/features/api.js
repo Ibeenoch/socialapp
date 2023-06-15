@@ -3,7 +3,7 @@ const url = 'https://socialbackend.onrender.com';
 
 export const login = async (formdata) => await axios.post(`${url}/user/login`, formdata)
 export const register = async (formdata) => await axios.post(`${url}/user/register`, formdata)
-export const getMe = async() => {
+export const getMe = async(id) => {
      const { token} = JSON.parse(localStorage.getItem('user'))
 
      const option = {
@@ -14,8 +14,8 @@ export const getMe = async() => {
       },
     
     }
-  const response = await fetch(`${url}/user/me`, option )
-
+  const response = await fetch(`${url}/user/findperson/${id}`,  option )
+ 
   const data = await response.json()
 
 console.log(data)
