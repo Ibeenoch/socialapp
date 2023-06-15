@@ -62,7 +62,7 @@ export const createProfile = async({dataprofile, navigate, toast}) => {
 
   if(response){
        toast.success('profile created')
-     setTimeOut(() => {
+     setTimeout(() => {
           navigate('/');
      }, 5000);
     
