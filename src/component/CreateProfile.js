@@ -6,7 +6,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { createProfile, getProfile, profileUpdate } from '../features/profileSlice'
 import Loading from './SideThree/Loading'
-import { findaPerson } from '../features/userSlice'
+import { findme } from '../features/userSlice'
 const CreateProfile = () => {
 const user = JSON.parse(localStorage.getItem('user'));
 
@@ -69,7 +69,7 @@ const addEventForm = async (dataprofile) => {
      dispatch(profileUpdate({dataprofile, navigate, toast}))  
   }else{
     const userid = user.user._id;
-  await Promise.all([dispatch(createProfile({dataprofile, toast})), dispatch(getProfile()), dispatch(findaPerson(userid)) ])
+  await Promise.all([dispatch(createProfile({dataprofile, toast})), dispatch(getProfile()), dispatch(findme(userid)) ])
     .then(() => {
       navigate('/');
     });
