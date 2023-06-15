@@ -69,10 +69,13 @@ const addEventForm = async (dataprofile) => {
      dispatch(profileUpdate({dataprofile, navigate, toast}))  
   }else{
     const userid = user.user._id;
-  await Promise.all([dispatch(createProfile({dataprofile, toast})), dispatch(getProfile()), dispatch(findme(userid)) ])
+    dispatch(createProfile({dataprofile, toast})).then(async() => {
+     await Promise.all([dispatch(getProfile()), dispatch(findme(userid)) ])
     .then(() => {
       navigate('/');
     });
+    })
+  
   }
 
 }
