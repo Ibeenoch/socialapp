@@ -70,7 +70,7 @@ const addEventForm = (dataprofile) => {
   await Promise.all([dispatch(createProfile({dataprofile, toast})), dispatch(getProfile()) ])
     .then(() => {
       navigate('/');
-    })
+    });
   }
 
 }
