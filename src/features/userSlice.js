@@ -3,8 +3,8 @@ import * as api from './api'
 import localStorage from 'redux-persist/es/storage'
 
 
-const user = localStorage.getItem('user')
-const registeruser = localStorage.getItem('registeruser')
+const user = localStorage.getItem('user');
+const registeruser = localStorage.getItem('user');
 const allUser = localStorage.getItem('allUser')
 const followers = localStorage.getItem('followers')
 const following = localStorage.getItem('following')
