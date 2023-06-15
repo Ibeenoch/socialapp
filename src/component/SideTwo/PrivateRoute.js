@@ -3,7 +3,7 @@ import { useSelector } from 'react-redux'
 import Redirect from './Redirect'
 
 const PrivateRoute = ({children}) => {
-    const user = JSON.parse(localStorage.getItem('user'));
+    const user = localStorage.getItem('user');
 console.log('seeUser: ', user);
     
     return user ? children : <Redirect />
