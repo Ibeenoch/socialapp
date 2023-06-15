@@ -61,8 +61,11 @@ export const createProfile = async({dataprofile, navigate, toast}) => {
   const response = await fetch(`${url}/profile/create`, option)
 
   if(response){
-     navigate('/login')
-    toast.success('profile created')
+       toast.success('profile created')
+     setTimeOut(() => {
+          navigate('/');
+     }, 5000);
+    
   }
   
   console.log(response.data)
