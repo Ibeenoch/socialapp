@@ -55,9 +55,9 @@ export const register = createAsyncThunk('user/register', async({formdata, navig
     }
 }) 
 
-export const findme = createAsyncThunk('user/me', async(_, thunkAPI ) => {
+export const findme = createAsyncThunk('user/me', async(id, thunkAPI ) => {
     try {
-      return await api.getMe()  
+      return await api.getMe(id);
     } catch (error) {
         const message = error.response.data
         return thunkAPI.rejectWithValue(message)
@@ -66,6 +66,7 @@ export const findme = createAsyncThunk('user/me', async(_, thunkAPI ) => {
 
 export const findaPerson = createAsyncThunk('user/person', async(id, thunkAPI ) => {
     try {
+        console.log("getPersonSlice: ", id);
       return await api.getPerson(id)  
     } catch (error) {
         const message = error.response.data
