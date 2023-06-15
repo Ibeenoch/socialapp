@@ -14,7 +14,7 @@ export const getMe = async(id) => {
       },
     
     }
-  const response = await fetch(`${url}/user/findperson/${id}`,  option )
+  const response = await fetch(`${url}/user/findme/${id}`,  option )
  
   const data = await response.json()
 
