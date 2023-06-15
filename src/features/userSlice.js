@@ -4,7 +4,6 @@ import localStorage from 'redux-persist/es/storage'
 
 
 const user = localStorage.getItem('user');
-const registeruser = localStorage.getItem('user');
 const allUser = localStorage.getItem('allUser')
 const followers = localStorage.getItem('followers')
 const following = localStorage.getItem('following')
@@ -20,7 +19,7 @@ const initialState = {
     isSuccess: false,
     isDeleted: false,
     user: user ? user : null,
-    registeruser: registeruser ? registeruser : null,
+    registeruser: user ? user : null,
     allUser: allUser ? allUser : {},
     followed: false,
     followers: followers ? followers : null,
