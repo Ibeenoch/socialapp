@@ -47,7 +47,7 @@ return data
 
 
 export const createProfile = async({dataprofile, navigate, toast}) => {
-  const { token } = JSON.parse(localStorage.getItem('registeruser'))
+  const { token } = JSON.parse(localStorage.getItem('user'))
 
   console.log(token) 
   const option = {
