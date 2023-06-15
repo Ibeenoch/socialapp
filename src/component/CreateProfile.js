@@ -63,7 +63,7 @@ if(!arr){
 
 }
 
-const addEventForm = (dataprofile) => {
+const addEventForm = async (dataprofile) => {
   if(prevPro){
      dispatch(profileUpdate({dataprofile, navigate, toast}))  
   }else{
