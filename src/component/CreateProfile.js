@@ -6,7 +6,7 @@ import { useNavigate, useParams } from 'react-router-dom'
 import { toast } from 'react-toastify'
 import { createProfile, getProfile, profileUpdate } from '../features/profileSlice'
 import Loading from './SideThree/Loading'
-
+import { findme } from '../features/userSlice'
 const CreateProfile = () => {
 
   const hiddenFileInput = useRef(null)
@@ -67,7 +67,7 @@ const addEventForm = async (dataprofile) => {
   if(prevPro){
      dispatch(profileUpdate({dataprofile, navigate, toast}))  
   }else{
-  await Promise.all([dispatch(createProfile({dataprofile, toast})), dispatch(getProfile()) ])
+  await Promise.all([dispatch(createProfile({dataprofile, toast})), dispatch(getProfile()), dispatch(findme()) ])
     .then(() => {
       navigate('/');
     });
