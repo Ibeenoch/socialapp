@@ -46,7 +46,7 @@ return data
 }
 
 
-export const createProfile = async({dataprofile, navigate, toast}) => {
+export const createProfile = async({dataprofile, toast}) => {
   const { token } = JSON.parse(localStorage.getItem('user'))
 
   console.log(token) 
@@ -61,15 +61,12 @@ export const createProfile = async({dataprofile, navigate, toast}) => {
   const response = await fetch(`${url}/profile/create`, option)
 
   if(response){
-       toast.success('profile created')
-     setTimeout(() => {
-          navigate('/');
-     }, 5000);
-    
+       toast.success('profile created');
+    console.log(response.data)
+   return response.data
   }
   
-  console.log(response.data)
-   return response.data
+  
   
 }
 
