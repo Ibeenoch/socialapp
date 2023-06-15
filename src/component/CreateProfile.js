@@ -67,7 +67,10 @@ const addEventForm = (dataprofile) => {
   if(prevPro){
      dispatch(profileUpdate({dataprofile, navigate, toast}))  
   }else{
-   dispatch(createProfile({dataprofile, navigate, toast}))          
+  await Promise.all([dispatch(createProfile({dataprofile, toast})), dispatch(getProfile()) ])
+    .then(() => {
+      navigate('/');
+    })
   }
 
 }
