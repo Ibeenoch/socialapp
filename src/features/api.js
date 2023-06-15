@@ -27,7 +27,7 @@ return data
   export const getPerson = async(id) => {
 
       const { token} = JSON.parse(localStorage.getItem('user'))
- console.log("getPersonApi: ", token);
+ console.log("getPersonApi: ", id, token);
       const option = {
        method: 'GET',
        headers: {
