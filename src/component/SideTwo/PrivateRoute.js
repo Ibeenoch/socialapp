@@ -4,7 +4,8 @@ import Redirect from './Redirect'
 
 const PrivateRoute = ({children}) => {
     const user = JSON.parse(localStorage.getItem('user'));
-
+console.log('seeUser: ', user);
+    
     return user ? children : <Redirect />
 }
 
