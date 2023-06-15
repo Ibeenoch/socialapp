@@ -75,10 +75,10 @@ const addEventForm = async (dataprofile) => {
 
 }
 
-const prevPro = profile.fetchProfile ?  profile.fetchProfile.map((azz) => azz._id).toString() : null
-const prevProfileHandle = profile.fetchProfile ?  profile.fetchProfile.map((azz) => azz.handle).toString() : null
-const prevProfileBio = profile.fetchProfile ?  profile.fetchProfile.map((azz) => azz.bio).toString() : null
-const prevProfileLocation = profile.fetchProfile ?  profile.fetchProfile.map((azz) => azz.location).toString() : null
+const prevPro = id ?  profile.fetchProfile.map((azz) => azz._id).toString() : null
+const prevProfileHandle = id ?  profile.fetchProfile.map((azz) => azz.handle).toString() : null
+const prevProfileBio = id ?  profile.fetchProfile.map((azz) => azz.bio).toString() : null
+const prevProfileLocation = id ?  profile.fetchProfile.map((azz) => azz.location).toString() : null
 
 
 useEffect(() => {
