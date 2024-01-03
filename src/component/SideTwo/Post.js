@@ -98,12 +98,12 @@ const handledelete = async() => {
       <MoreHoriz />
       </div> 
 
-<div  onBlur={handleshow}  style={{display: (show ? 'flex' : 'none'), right: '20vw' ,border: '0.3px solid grey' , fontSize: '1rem',cursor: 'pointer', justifyContent: 'center', alignItems: 'center',  flexDirection: 'column', position: 'absolute' , width:'auto', height: '60px', background: 'white', borderRadius: '1rem'}}>
+<div  onBlur={handleshow}  style={{display: (show ? 'flex' : 'none'), right: '30vw' , fontSize: '0.7rem', cursor: 'pointer', justifyContent: 'center', alignItems: 'center',  flexDirection: 'column', position: 'absolute' , width:'auto', height: '60px', background: 'white', borderRadius: '1rem'}}>
  <Link to={`/postpage/${post._id}`} style={{color: 'black'}}>
- <div ><Typography style={{fontSize:'1rem'}} variant='h9'  >Edit</Typography> </div>
+ <div ><Typography style={{fontSize:'0.7rem'}} variant='h9'  >Edit</Typography> </div>
  </Link>  
    <div onClick={handledelete}>
-     <Typography style={{fontSize:'1rem'}} variant='h9' >Delete</Typography> 
+     <Typography style={{fontSize:'0.7rem'}} variant='h9' >Delete</Typography> 
      </div>
    </div>
    </div>
@@ -123,10 +123,10 @@ const handledelete = async() => {
 
 <div className="icon" style={{display: 'flex', justifyContent: 'space-between', padding: '0.4rem'}}>
 <div className="left" style={{display: 'flex', columnGap: '0.5rem'}}>
- <div style={{ cursor:'pointer' }} onClick={handlelike}>
+ <div style={{ cursor:'pointer' }} onClick={handlelike} style={{fontSize:'0.7rem'}} >
   {post.likes.length} <ThumbUpAlt style={{fontSize:'0.7rem'}}/> 
    </div>
- <div onClick={comments}>{post.comments.length} <Comment style={{fontSize:'0.5rem', cursor:'pointer'}} /> </div>
+ <div onClick={comments} style={{fontSize:'0.7rem'}} >{post.comments.length} <Comment style={{fontSize:'0.5rem', cursor:'pointer'}} /> </div>
 
 </div>
 
