@@ -50,7 +50,7 @@ home.forEach((item) => {
   
 
   return (
-    <div style={{display: 'flex', justifyContent: 'space-between',background: 'grey', borderRadius: '1.5rem', alignItems: 'center' , padding: '0.3rem 1rem', height: 'max-content', width: '90vw', margin: '1.2rem'}}>
+    <div style={{display: 'flex', justifyContent: 'space-between',background: 'grey', borderRadius: '1.5rem', alignItems: 'center' , padding: '0rem 1rem', height: 'max-content', width: '100℅'}}>
          
            <div  className='effects' style={{display: 'flex', cursor:'pointer', justifyContent:'center', alignItems: 'center', margin: '1.2rem 0rem'}} onClick={toHome}>
              <Home />
