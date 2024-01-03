@@ -68,7 +68,7 @@ const Comment = () => {
           
           <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: 'gray', padding: '1rem'}}>
          <div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-around', columnGap: '1.2rem'}}>
-              <div onClick={backHome} style={{cursor: 'pointer', display: 'flex'}}>
+              <div onClick={backHome} style={{cursor: 'pointer', display: 'flex', alignItem: 'center'}}>
                 <ArrowBack />
                 <div style={{ margin: '0rem 0.2rem'}}>
                  <img src={user.user.profilepics.url || profile.fetchProfile.map((item) => item.profilepics.url)} style={{width: '40px', height: '40px', borderRadius: '50%'}} />
@@ -96,7 +96,7 @@ const Comment = () => {
 
          
         <form onSubmit={handlecomment}>
-             <div style={{ display: 'flex', marginTop:'62vh', justifyContent:'center', alignItems:'center', alignContent:'center', borderRadius: '0.3rem', background: 'white', boxShadow: '0 0 0.4rem gray', width: '80%', padding: '0.5rem' }}>
+             <div style={{ display: 'flex', marginTop:'62vh', justifyContent:'center', alignItems:'center', alignContent:'center', borderRadius: '0.3rem', background: 'white', boxShadow: '0 0 0.4rem gray', width: '97%', padding: '0.5rem' }}>
               <TextField style={{ fontSize: '1rem', border:'none', textAlign:'center', marginTop:'-1rem'}} type='text'  fullWidth label="write a comment " name='comments[omment]' value={word.comments.comment} onChange={handleChange} />
              <button  style={{ fontSize: '1rem', border:'none', background:'none', cursor:'pointer', marginRight:'0.7rem'}} type='submit' >
                  <Send />
