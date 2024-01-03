@@ -124,9 +124,9 @@ const handledelete = async() => {
 <div className="icon" style={{display: 'flex', justifyContent: 'space-between', padding: '0.4rem'}}>
 <div className="left" style={{display: 'flex', columnGap: '0.5rem'}}>
  <div style={{ cursor:'pointer' }} onClick={handlelike} style={{fontSize:'0.7rem'}} >
-  {post.likes.length} <ThumbUpAlt style={{fontSize:'0.7rem'}}/> 
+  {post.likes.length} <ThumbUpAlt style={{fontSize:'0.8rem'}}/> 
    </div>
- <div onClick={comments} style={{fontSize:'0.7rem'}} >{post.comments.length} <Comment style={{fontSize:'0.5rem', cursor:'pointer'}} /> </div>
+ <div onClick={comments} style={{fontSize:'0.7rem'}} >{post.comments.length} <Comment style={{fontSize:'0.8rem', cursor:'pointer'}} /> </div>
 
 </div>
 
@@ -135,12 +135,10 @@ const handledelete = async() => {
 </div>
 </div>
 
-<Box onClick={comments} sx={{display: 'grid', gridTemplateColumns: '3vw auto', padding: '0.5rem', background: 'white'}}>
-<img src={profile.fetchProfile.map((item) => item.profilepics.url)} style={{width: '40px', zIndex:'3', height: '40px', borderRadius: '50%'}} />
-<div style={{ background: 'white', display: 'flex', background: 'white'}}>
- <Input style={{fontSize:'0.7rem', marginLeft:'1rem'}} placeholder='write a comment' variant="contained" fullWidth/>
- <Send style={{fontSize:'1rem', marginTop:'0.7rem'}}/>
-</div>
+<Box onClick={comments} sx={{display: 'grid', gridTemplateColumns: '15℅ 60℅ 15℅', padding: '0.4rem', background: 'white'}}>
+ <img src={profile.fetchProfile.map((item) => item.profilepics.url)} style={{width: '40px', zIndex:'3', height: '40px', borderRadius: '50%'}} />
+ <Input style={{fontSize:'0.7rem', margin:'0rem 0.5rem'}} placeholder='write a comment' variant="contained" fullWidth/>
+ <Send style={{fontSize:'1rem'}}/>
 </Box>
 
 </Box >   
