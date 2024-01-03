@@ -95,7 +95,7 @@ const Comment = () => {
 
          
         <form onSubmit={handlecomment}>
-             <div style={{ display: 'flex', marginTop:'1rem', justifyContent:'center', alignItems:'center', alignContent:'center', borderRadius: '1.2rem', background: 'white', boxShadow: '0 0 0.4rem gray', width: '90%', marginLeft: '1.5rem', }}>
+             <div style={{ display: 'flex', marginTop:'100vh', justifyContent:'center', alignItems:'center', alignContent:'center', borderRadius: '1.2rem', background: 'white', boxShadow: '0 0 0.4rem gray', width: '100%', padding: '0.5rem' }}>
               <TextField style={{ fontSize: '1rem', border:'none', paddingLeft:'1.5rem', textAlign:'center', marginTop:'-1rem'}} type='text'  fullWidth label="write a comment " name='comments[omment]' value={word.comments.comment} onChange={handleChange} />
              <button  style={{ fontSize: '1rem', border:'none', background:'none', cursor:'pointer', marginRight:'0.7rem'}} type='submit' >
                  <Send />
