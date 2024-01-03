@@ -81,12 +81,12 @@ const handledelete = async() => {
       }
     return (
         <div style={{ background: 'gray'}}>
-         <Box sx={{ backgroundColor: 'white', borderRadius: '1.2rem', marginTop: '1rem', width: '60%', marginBottom: '1rem', marginLeft:'20%'}}>
+         <Box sx={{ backgroundColor: 'white', borderRadius: '1.2rem', marginTop: '0.4rem', width: '100%', marginBottom: '0.4rem'}}>
 
 <div style={{ display: 'flex', justifyContent: 'space-between', padding:'1.2rem'}} >
 
  <div  style={{display: 'flex', padding: '0.6rem', alignItems: 'center'}}>
-  <img src={post.owner.profilepics.url} onError={hide} style={{ width:'50px', cursor: 'pointer', height: '50px', borderRadius: '50%', marginRight: '0.9rem'}} />
+  <img src={post.owner.profilepics.url} onError={hide} style={{ width:'40px', cursor: 'pointer', height: '40px', borderRadius: '50%', marginRight: '0.5rem'}} />
   <div className="header" style={{ display: 'flex', flexDirection: 'column'}}>
     <Typography variant='h9'>{post.owner.name} </Typography>
     <Typography style={{fontSize:'0.8rem'}} variant='h9'>{post.createdAt.slice(0, 10)} </Typography>
@@ -100,10 +100,10 @@ const handledelete = async() => {
 
 <div  onBlur={handleshow}  style={{display: (show ? 'flex' : 'none'), right: '20vw' ,border: '0.3px solid grey' , fontSize: '1rem',cursor: 'pointer', justifyContent: 'center', alignItems: 'center',  flexDirection: 'column', position: 'absolute' , width:'auto', height: '60px', background: 'white', borderRadius: '1rem'}}>
  <Link to={`/postpage/${post._id}`} style={{color: 'black'}}>
- <div ><Typography style={{fontSize:'1rem'}} variant='h6'  >Edit</Typography> </div>
+ <div ><Typography style={{fontSize:'1rem'}} variant='h9'  >Edit</Typography> </div>
  </Link>  
    <div onClick={handledelete}>
-     <Typography style={{fontSize:'1rem'}} variant='h6' >Delete</Typography> 
+     <Typography style={{fontSize:'1rem'}} variant='h9' >Delete</Typography> 
      </div>
    </div>
    </div>
@@ -111,22 +111,22 @@ const handledelete = async() => {
 </div>
 
 
-<div style={{ 'padding': '1.2rem'}}>
+<div style={{ 'padding': '0.4rem'}}>
       <Typography variant='h7' >{post.post}</Typography>
 </div>
 
-<div className="post-img" style={{  padding: '1.2rem'}}>
+<div className="post-img" style={{  padding: '0.4rem'}}>
   {!post.img ? (<div></div>) : (<img onClick={viewimg} className="view" src={post.img.url} style={{ width: fullscreen ? '100vw' : '100%', height: fullscreen ? '100vh' : 'auto', borderRadius:'1.2rem', cursor:'pointer'}} />
 )
 }
 </div>
 
-<div className="icon" style={{display: 'flex', justifyContent: 'space-between', padding: '1.2rem'}}>
-<div className="left" style={{display: 'flex', columnGap: '1rem'}}>
+<div className="icon" style={{display: 'flex', justifyContent: 'space-between', padding: '0.4rem'}}>
+<div className="left" style={{display: 'flex', columnGap: '0.5rem'}}>
  <div style={{ cursor:'pointer' }} onClick={handlelike}>
-  {post.likes.length} <ThumbUpAlt style={{fontSize:'1rem'}}/> 
+  {post.likes.length} <ThumbUpAlt style={{fontSize:'0.7rem'}}/> 
    </div>
- <div onClick={comments}>{post.comments.length} <Comment style={{fontSize:'1rem', cursor:'pointer'}} /> </div>
+ <div onClick={comments}>{post.comments.length} <Comment style={{fontSize:'0.5rem', cursor:'pointer'}} /> </div>
 
 </div>
 
@@ -135,11 +135,11 @@ const handledelete = async() => {
 </div>
 </div>
 
-<Box onClick={comments} sx={{display: 'grid', gridTemplateColumns: '3vw auto', padding: '1.5rem 2rem', background: 'white', borderRadius: '1.2rem',}}>
+<Box onClick={comments} sx={{display: 'grid', gridTemplateColumns: '3vw auto', padding: '0.5rem', background: 'white'}}>
 <img src={profile.fetchProfile.map((item) => item.profilepics.url)} style={{width: '40px', zIndex:'3', height: '40px', borderRadius: '50%'}} />
-<div style={{ borderRadius: '1.2rem', background: 'white', paddingLeft:'1.2rem', display: 'flex', background: 'white'}}>
+<div style={{ background: 'white', display: 'flex', background: 'white'}}>
  <Input style={{fontSize:'0.7rem', marginLeft:'1rem'}} placeholder='write a comment' variant="contained" fullWidth/>
- <Send style={{fontSize:'1.5rem', marginTop:'0.7rem'}}/>
+ <Send style={{fontSize:'1rem', marginTop:'0.7rem'}}/>
 </div>
 </Box>
 
