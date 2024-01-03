@@ -44,16 +44,16 @@ const NavBar = () => {
         <Toolbar >
         <Avatar className={classes.logoImg} src={social} alt='social' />
         </Toolbar>
-        <Typography variant='h5'  className={classes.social} >Social App</Typography>    
+        <Typography variant='h6'  className={classes.social} >Social App</Typography>    
     </div>    
     {user ? (   
        <div style={{cursor: 'pointer', display: 'flex', padding: '0.5rem 1.3rem', justifyContent:'space-between'}} >
-   <Typography style={{fontSize:'1rem', marginRight: '1rem'}} variant='h6' >Welcome {user.user ? user.user.name : null} </Typography>
-     <Typography style={{fontSize:'1rem'}} variant='h6' onClick={handleLogout}> Logout</Typography>
+   <Typography style={{fontSize:'0.7rem', marginRight: '0.7rem'}} variant='h7' >Welcome {user.user ? user.user.name : null} </Typography>
+     <Typography style={{fontSize:'0.7rem'}} variant='h7' onClick={handleLogout}> Logout</Typography>
 
 </div>
 ) : 
-(    <div style={{cursor: 'pointer', display: 'flex', padding: '0.5rem 1.3rem',}} >
+(    <div style={{cursor: 'pointer', display: 'flex', padding: '0.5rem',}} >
 
 <Link to={'/register'} style={{ fontSize: '0.8rem'}} >Register</Link>
 <Link to={'/login'} style={{ fontSize: '0.8rem'}} >Login</Link>
