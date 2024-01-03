@@ -44,7 +44,7 @@ const NavBar = () => {
         <Toolbar >
         <Avatar className={classes.logoImg} src={social} alt='social' />
         </Toolbar>
-        <Typography variant='h6'  className={classes.social} >Social App</Typography>    
+        <Typography variant='h7'  className={classes.social} >Social App</Typography>    
     </div>    
     {user ? (   
        <div style={{cursor: 'pointer', display: 'flex', padding: '0.5rem 1.3rem', justifyContent:'space-between'}} >
