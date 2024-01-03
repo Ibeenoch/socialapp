@@ -103,12 +103,12 @@ useEffect(() => {
           <Box>
               <form onSubmit={submit}>
               <div style={{display: 'flex', height: 'auto', justifyContent: 'space-between', alignItems: 'center', padding: '1rem', borderBottom: '1px solid black'}}>
-                  <div style={{cursor: 'pointer'}} onClick={goHome}>
-                      <ArrowBack style={{fontSize:'1rem'}} />  
+                  <div style={{cursor: 'pointer', display: 'flex'}} >
+                      <ArrowBack style={{fontSize:'1rem'}} onClick={goHome}/>  
+                   
+                    <Typography style={{fontSize:'1rem', margin: '0rem 0.4rem'}} variant='h7'>{id ? 'Update Post' : 'Create Post'}</Typography>
                   </div>
-                  <div>
-                  <Typography style={{fontSize:'1rem'}} variant='h7'>{id ? 'Update Post' : 'Create Post'}</Typography>
-                  </div>
+                  
                   <div style={{ border: '1px solid black', borderRadius: '1.2rem', padding: '0.6rem 1.2rem', cursor:'pointer'}}>
                    <button type='submit' style={{border: 'none', background: 'none', fontSize: '1rem', cursor:'pointer'}}>Post</button>    
                   </div>
