@@ -107,7 +107,7 @@ useEffect(() => {
                       <ArrowBack style={{fontSize:'1rem'}} />  
                   </div>
                   <div>
-                  <Typography style={{fontSize:'1rem'}} variant='h6'>{id ? 'Update Post' : 'Create Post'}</Typography>
+                  <Typography style={{fontSize:'1rem'}} variant='h7'>{id ? 'Update Post' : 'Create Post'}</Typography>
                   </div>
                   <div style={{ border: '1px solid black', borderRadius: '1.2rem', padding: '0.6rem 1.2rem', cursor:'pointer'}}>
                    <button type='submit' style={{border: 'none', background: 'none', fontSize: '1rem', cursor:'pointer'}}>Post</button>    
