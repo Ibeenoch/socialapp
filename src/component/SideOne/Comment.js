@@ -60,8 +60,8 @@ const Comment = () => {
 
  
   return (
-    <div style={{ width: '100℅', height: '70vh', margin: '1rem 0.5rem', borderRadius: '1.2rem'}}>
-        <Box sx={{ width: '100%', height:'70vh', background: 'white', borderRadius: '1.2rem', boxShadow: '0 0 1rem gray'}} >
+    <div style={{ width: '100℅', height: '80vh', margin: '1rem 0.5rem', borderRadius: '1.2rem'}}>
+        <Box sx={{ width: '100%', height:'80vh', background: 'white', borderRadius: '1.2rem', boxShadow: '0 0 1rem gray'}} >
           <div style={{background: 'gray', borderTopLeftRadius: '1.2rem', borderTopRightRadius: '1.2rem', color: 'white'}}>
               <Typography variant='h5' align='center' style={{ fontSize: '0.8rem', paddingTop: '0.7rem'}} >Comment</Typography>
           </div>
@@ -95,7 +95,7 @@ const Comment = () => {
 
          
         <form onSubmit={handlecomment}>
-             <div style={{ display: 'flex', marginTop:'90vh', justifyContent:'center', alignItems:'center', alignContent:'center', borderRadius: '1.2rem', background: 'white', boxShadow: '0 0 0.4rem gray', width: '100%', padding: '0.5rem' }}>
+             <div style={{ display: 'flex', marginTop:'80vh', justifyContent:'center', alignItems:'center', alignContent:'center', borderRadius: '1.2rem', background: 'white', boxShadow: '0 0 0.4rem gray', width: '100%', padding: '0.5rem' }}>
               <TextField style={{ fontSize: '1rem', border:'none', paddingLeft:'1.5rem', textAlign:'center', marginTop:'-1rem'}} type='text'  fullWidth label="write a comment " name='comments[omment]' value={word.comments.comment} onChange={handleChange} />
              <button  style={{ fontSize: '1rem', border:'none', background:'none', cursor:'pointer', marginRight:'0.7rem'}} type='submit' >
                  <Send />
