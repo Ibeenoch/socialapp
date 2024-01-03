@@ -68,7 +68,7 @@ useEffect(() => {
          <Route path='/viewcover/:id' element={<ViewCover/>   } />
          <Route path='/createprofile' element={<CreateProfile />   } />
          <Route path='/createprofile/:id' element={ <PrivateRoute ><CreateProfile /></PrivateRoute>  } />
-        </div>
+        
         </Routes>
         <ToastContainer />
     </Router>
