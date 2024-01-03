@@ -9,8 +9,8 @@ const makeStyle= makeStyles((theme) => ({
      width: '100%'
     },
     social: {
-        marginTop: '20px',
-        fontSize: '1rem'
+        marginTop: '15px',
+        fontSize: '0.8rem'
     },
     logoImg: {
         width: '50px',
