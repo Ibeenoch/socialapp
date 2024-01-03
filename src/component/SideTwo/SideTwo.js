@@ -28,7 +28,7 @@ const navigate = useNavigate()
     
     <Link to='/postpage'>
    <form>
-  <Box sx={{ width: '80%', marginLeft:'10%', display: 'flex', marginTop: '1.2rem', borderRadius: '1.2rem', background: 'white', columnGap: '0.4rem', padding:'0.6rem 0.5rem'}}>
+  <Box sx={{ width: '100%', marginLeft:'5%', display: 'flex', marginTop: '1.2rem', borderRadius: '1.1rem', background: 'white', columnGap: '0.3rem', padding:'0.5rem'}}>
       <img src={user.user.profilepics.url || profile.fetchProfile && profile.fetchProfile.map((item) => item.profilepics.url)} onError={(e) => e.target.style.display='none'} style={{width: '50px', height: '50px', borderRadius: '50%', cursor: 'pointer'}} />
       <div style={{ width: '100%'}} >
         <Input  type='text' style={{ width: '90%', fontSize:'0.7rem'}} placeholder='What"s on your mind'/>
