@@ -43,7 +43,7 @@ if(isLoading){
   return (
     <Container maxWidth='lg'>
       <Grid container justifyContent='center' alignItems='center' spacing={3} >
-        <Grid item xs={12}  sm={6} >
+        <Grid item xs={10}  sm={6} >
           <Box sx={{ textAlign: 'center', padding: '1rem', fontWeight: '500', width:'80vw'}}>
             <Typography variant='h6' > Welcome to Social App </Typography>
           </Box>
