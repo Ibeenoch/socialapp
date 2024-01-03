@@ -135,7 +135,7 @@ const handledelete = async() => {
 </div>
 </div>
 
-<Box onClick={comments} sx={{display: 'grid', gridTemplateColumns: '15℅ 60℅ 15℅', padding: '0.4rem', background: 'white'}}>
+<Box onClick={comments} style={{display: 'grid', gridTemplateColumns: '15℅ 50℅ 15℅', padding: '0.4rem', background: 'white'}}>
  <img src={profile.fetchProfile.map((item) => item.profilepics.url)} style={{width: '40px', zIndex:'3', height: '40px', borderRadius: '50%'}} />
  <Input style={{fontSize:'0.7rem', margin:'0rem 0.5rem'}} placeholder='write a comment' variant="contained" fullWidth/>
  <Send style={{fontSize:'1rem'}}/>
