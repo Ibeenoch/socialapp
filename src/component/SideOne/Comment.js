@@ -60,8 +60,8 @@ const Comment = () => {
 
  
   return (
-    <div style={{ width: '100℅', height: '100vh', margin: '1rem 0.5rem', borderRadius: '1.2rem'}}>
-        <Box sx={{ width: '100%', height:'100vh', background: 'white', borderRadius: '1.2rem', boxShadow: '0 0 1rem gray'}} >
+    <div style={{ width: '100℅', height: '90vh', margin: '1rem 0.5rem', borderRadius: '1.2rem'}}>
+        <Box sx={{ width: '100%', height:'90vh', background: 'white', borderRadius: '1.2rem', boxShadow: '0 0 1rem gray'}} >
           <div style={{background: 'gray', borderTopLeftRadius: '1.2rem', borderTopRightRadius: '1.2rem', color: 'white'}}>
               <Typography variant='h5' align='center' style={{ fontSize: '0.8rem', paddingTop: '0.7rem'}} >Comment</Typography>
           </div>
