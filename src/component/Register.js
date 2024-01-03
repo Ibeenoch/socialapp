@@ -50,7 +50,7 @@ if(isLoading){
           <Paper style={{ padding: '2px', margin: '5px', width: 'auto', display: 'flex',  flexDirection: 'column',}}  elevation={6}>
             <div style={{ textAlign: 'center',  display: 'flex', justifyContent: 'center',  alignItems: 'center'}}>
               <LockOutlined />
-              <Typography variant='h6'>Sign Up</Typography>
+              <Typography variant='h7'>Sign Up</Typography>
             </div>
             <div style={{ height: '100%'}}>
              <form autoComplete='off' noValidate onSubmit={submit} >
