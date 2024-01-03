@@ -30,7 +30,7 @@ const navigate = useNavigate()
    <form>
   <Box sx={{ width: '100%', display: 'flex', marginTop: '1.2rem', borderRadius: '1rem', background: 'white', padding:'0.5rem'}}>
       <img src={user.user.profilepics.url || profile.fetchProfile && profile.fetchProfile.map((item) => item.profilepics.url)} onError={(e) => e.target.style.display='none'} style={{width: '40px', height: '40px', borderRadius: '50%', cursor: 'pointer'}} />
-      <div style={{ width: '80℅', padding: '0 0.5rem'}} >
+      <div style={{ width: '100℅', padding: '0 0.5rem'}} >
         <Input  type='text' style={{ width: '90%', fontSize:'0.7rem'}} placeholder='What"s on your mind'/>
       </div>
       <Button variant='contained' style={{ width: 'auto', fontSize: '0.7rem', height:'auto'}} color='primary' > Post</Button>
