@@ -19,7 +19,7 @@ const makeStyle= makeStyles((theme) => ({
     logoSpacing: {
         display: 'flex',
         justifyContent: 'space-between',
-        padding: '0.3rem 1.3rem',
+        padding: '0.3rem',
         
     },
 
