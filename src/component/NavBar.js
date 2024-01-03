@@ -55,8 +55,8 @@ const NavBar = () => {
 ) : 
 (    <div style={{cursor: 'pointer', display: 'flex', padding: '0.5rem 1.3rem',}} >
 
-<Link to={'/register'} style={{ fontSize: '1.2rem'}} >Register</Link>
-<Link to={'/login'} style={{ fontSize: '1.2rem'}} >Login</Link>
+<Link to={'/register'} style={{ fontSize: '0.8rem'}} >Register</Link>
+<Link to={'/login'} style={{ fontSize: '0.8rem'}} >Login</Link>
 </div>)
 }
         </div>
