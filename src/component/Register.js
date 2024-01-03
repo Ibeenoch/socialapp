@@ -44,10 +44,10 @@ if(isLoading){
     <Container maxWidth='lg'>
       <Grid container justifyContent='center' alignItems='center' spacing={3} >
         <Grid item xs={12}  sm={6} >
-          <Box sx={{ textAlign: 'center', padding: '1rem', fontWeight: '500'}}>
+          <Box sx={{ textAlign: 'center', padding: '1rem', fontWeight: '500', width:'80vw'}}>
             <Typography variant='h6' > Welcome to Social App </Typography>
           </Box>
-          <Paper style={{ padding: '10px', margin: '20px', width: '400px', display: 'flex',  flexDirection: 'column',}}  elevation={6}>
+          <Paper style={{ padding: '10px', margin: '20px', width: '80vw', display: 'flex',  flexDirection: 'column',}}  elevation={6}>
             <div style={{ textAlign: 'center',  display: 'flex', justifyContent: 'center',  alignItems: 'center'}}>
               <LockOutlined />
               <Typography variant='h6'>Sign Up</Typography>
