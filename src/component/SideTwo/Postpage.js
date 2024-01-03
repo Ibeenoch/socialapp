@@ -99,7 +99,7 @@ useEffect(() => {
 
   return (
 
-      <div style={{width: '100℅', height: 'auto', display: 'flex', border:'1px solid black', borderRadius: '1.2rem',  flexDirection: 'column', marginLeft:'25%', marginTop: '2rem' }}>
+      <div style={{width: '100℅', height: 'auto', display: 'flex', border:'1px solid black', borderRadius: '1.2rem',  flexDirection: 'column', marginTop: '2rem' }}>
           <Box>
               <form onSubmit={submit}>
               <div style={{display: 'flex', height: 'auto', justifyContent: 'space-between', alignItems: 'center', padding: '1rem', borderBottom: '1px solid black'}}>
