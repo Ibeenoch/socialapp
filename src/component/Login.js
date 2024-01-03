@@ -56,12 +56,12 @@ const { email, password } = formdata
       <Grid container justifyContent='center' alignItems='center' spacing={3} >
         <Grid item xs={10}  sm={6} >
           <Box sx={{ textAlign: 'center', padding: '0.8rem', fontWeight: '200'}}>
-            <Typography variant='h6'> Welcome to Social App </Typography>
+            <Typography variant='h7'> Welcome to Social App </Typography>
           </Box>
           <Paper style={{ padding: '2px', margin: '5px', width: 'auto', display: 'flex',  flexDirection: 'column',}}  elevation={6}>
             <div style={{ textAlign: 'center',  display: 'flex', justifyContent: 'center',  alignItems: 'center'}}>
               <LockOpen />
-              <Typography variant='h6'>Sign In</Typography>
+              <Typography variant='h7'>Sign In</Typography>
             </div>
             <div style={{ height: '100%'}}>
              <form autoComplete='off' noValidate onSubmit={submit} >
