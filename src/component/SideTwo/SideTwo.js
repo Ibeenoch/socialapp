@@ -27,15 +27,13 @@ const navigate = useNavigate()
 </div>
     
     <Link to='/postpage'>
-   <form style={{ padding: '0.5rem'}}>
+   <form>
   <Box sx={{ width: '100%', display: 'flex', marginTop: '1.2rem', borderRadius: '1rem', background: 'white', padding:'0.5rem'}}>
-      <img src={user.user.profilepics.url || profile.fetchProfile && profile.fetchProfile.map((item) => item.profilepics.url)} onError={(e) => e.target.style.display='none'} style={{width: '50px', height: '50px', borderRadius: '50%', cursor: 'pointer'}} />
-      <div style={{ width: '100%'}} >
+      <img src={user.user.profilepics.url || profile.fetchProfile && profile.fetchProfile.map((item) => item.profilepics.url)} onError={(e) => e.target.style.display='none'} style={{width: '40px', height: '40px', borderRadius: '50%', cursor: 'pointer'}} />
+      <div style={{ width: '90%', padding: '0 0.5rem'}} >
         <Input  type='text' style={{ width: '90%', fontSize:'0.7rem'}} placeholder='What"s on your mind'/>
       </div>
       <Button variant='contained' style={{ width: 'auto', fontSize: '0.7rem', height:'auto'}} color='primary' > Post</Button>
-      
-    
       </Box>
      </form>
      </Link>
