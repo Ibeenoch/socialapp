@@ -48,10 +48,10 @@ useEffect(() => {
        </div>
       
        <Routes>
-       <div style={{width: '100vw'}}>
+       
          <Route path='/' element={<PrivateRoute><Home /></PrivateRoute>} />
-         <Route path='/login' element={<Login/>} />
-         <Route path='/register' element={<Register />} />
+        <div style={{width: '100vw'}}> <Route path='/login' element={<Login/>} /> </div>
+        <div style={{width: '100vw'}}> <Route path='/register' element={<Register />} /> </div>
          <Route path='/notify' element={<Notify />} /> 
          <Route path='/comment/:id' element={ <Comment />} />
          <Route path='/chat' element={<Chat />} />
