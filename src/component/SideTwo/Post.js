@@ -98,7 +98,7 @@ const handledelete = async() => {
       <MoreHoriz />
       </div> 
 
-<div  onBlur={handleshow}  style={{display: (show ? 'flex' : 'none'), right: '30vw' , fontSize: '0.7rem', cursor: 'pointer', justifyContent: 'center', alignItems: 'center',  flexDirection: 'column', position: 'absolute' , width:'auto', height: '60px', background: 'white', borderRadius: '1rem'}}>
+<div  onBlur={handleshow}  style={{display: (show ? 'flex' : 'none'), right: '5vw' , fontSize: '0.7rem', cursor: 'pointer', justifyContent: 'center', alignItems: 'center',  flexDirection: 'column', position: 'absolute' , width:'auto', height: '60px', background: 'white', borderRadius: '1rem'}}>
  <Link to={`/postpage/${post._id}`} style={{color: 'black'}}>
  <div ><Typography style={{fontSize:'0.7rem'}} variant='h9'  >Edit</Typography> </div>
  </Link>  
@@ -138,7 +138,7 @@ const handledelete = async() => {
 <Box onClick={comments} style={{display: 'flex', padding: '0.4rem', background: 'white'}}>
  <img src={profile.fetchProfile.map((item) => item.profilepics.url)} style={{width: '40px', zIndex:'3', height: '40px', borderRadius: '50%'}} />
  <Input style={{fontSize:'0.7rem', margin:'0rem 0.5rem'}} placeholder='write a comment' variant="contained" fullWidth/>
- <Send style={{fontSize:'1rem'}}/>
+ <Send style={{fontSize:'1.1rem', marginTop: '0.4rem'}}/>
 </Box>
 
 </Box >   
